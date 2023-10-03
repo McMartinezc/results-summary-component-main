@@ -31,3 +31,29 @@
 body{
     font-size: 18px;   
 }
+
+.card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__result{
+    background-color: var(--Light-royal-blue);
+}
+.card_summary-reaction{
+    background-color:var(--Light-red);
+}
+
+.card_summary-memory{
+    background-color:var(--Orangey-yellow);
+}
+.card_summary-verbal{
+    background-color:var(--Green-teal);
+}
+.card_summary-visual{
+    background-color:var(--Cobalt-blue);
+}
+.button{
+    background-color:var(--Dark-gray-blue);
+}
