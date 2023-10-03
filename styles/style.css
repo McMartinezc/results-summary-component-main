@@ -40,7 +40,13 @@ body{
 
 .card__result{
     background-color: var(--Light-royal-blue);
+    border-radius: 25px;
+    color:var(--Pale-blue);
 }
+.card_summary-title{
+    color: var(--Dark-gray-blue);
+}
+
 .card_summary-reaction{
     background-color:var(--Light-red);
 }
@@ -48,12 +54,18 @@ body{
 .card_summary-memory{
     background-color:var(--Orangey-yellow);
 }
+
 .card_summary-verbal{
     background-color:var(--Green-teal);
 }
+
 .card_summary-visual{
     background-color:var(--Cobalt-blue);
 }
+
 .button{
     background-color:var(--Dark-gray-blue);
+    color:var(--Pale-blue);
+    border-radius: 10px;
+    border:none;
 }
