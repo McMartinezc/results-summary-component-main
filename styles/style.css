@@ -25,11 +25,12 @@
     font-family: "Hanken Grotesk";
     font-style: normal;
     font-weight: 100;
-    src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("wght");
+    src: url("../assets/fonts/static/HankenGrotesk-VariableFont_wght.ttf") format("wght");
 }
 
 body{
     font-size: 18px;   
+    font-family: "Hanken Grotesk";
 }
 
 .card{
@@ -39,30 +40,80 @@ body{
 }
 
 .card__result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--Light-royal-blue);
     border-radius: 25px;
     color:var(--Pale-blue);
+    background:linear-gradient(160deg, var(--Light-slate-blue), var(--Light-royal-blue)) ;
+
 }
 .card_summary-title{
-    color: var(--Dark-gray-blue);
+    color: var(--Dark-gray-blue) ;
 }
 
 .card_summary-reaction{
-    background-color:var(--Light-red);
+    background-color:hsla(0, 100%, 67%, 0.3);
+    color:var(--Light-red);
+    
+    
 }
 
 .card_summary-memory{
-    background-color:var(--Orangey-yellow);
+    background-color: hsla(39, 100%, 56%, 0.3 );
+    color: var(--Orangey-yellow);
 }
 
 .card_summary-verbal{
-    background-color:var(--Green-teal);
+    background-color:hsla(166, 100%, 37%, 0.3);
+    color:var(--Verbal );
 }
 
 .card_summary-visual{
-    background-color:var(--Cobalt-blue);
+    background-color: hsla(234, 85%, 45%, 0.3);
+    color:var(--Cobalt-blue);
+}
+.card__result-cercle{
+    border-radius: 50%;
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+
+
+}
+/*Fuente personalizada*/
+@font-face {
+    font-family: "Hanken Grotesk";
+    font-style: normal;
+    font-weight: 100;
+    src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("font/ttf");
 }
 
+@font-face {
+    font-family: "Bold";
+    font-style: bold;
+    font-weight: 700;
+    src: url("../assets/fonts/static/HankenGrotesk-Bold.ttf") format("font/ttf");
+}
+
+@font-face {
+    font-family: "Extra Bold";
+    font-style: bold;
+    font-weight: 800;
+    src: url("../assets/fonts/static/HankenGrotesk-ExtraBold.ttf") format("font/ttf");
+}
+
+@font-face {
+    font-family: "Medium";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../assets/fonts/static/HankenGrotesk-Medium.ttf") format("font/ttf");
+}
+.card_summary{
+
+    
+    
+}
 .button{
     background-color:var(--Dark-gray-blue);
     color:var(--Pale-blue);
