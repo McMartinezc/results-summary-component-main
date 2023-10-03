@@ -20,3 +20,14 @@
     --Light-lavender: hsl(241, 100%, 89%);
     --Dark-gray-blue: hsl(224, 30%, 27%);
 }
+/*Fuente personalizada*/
+@font-face {
+    font-family: "Hanken Grotesk";
+    font-style: normal;
+    font-weight: 100;
+    src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("wght");
+}
+
+body{
+    font-size: 18px;   
+}
