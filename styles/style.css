@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 :root {
@@ -29,25 +30,32 @@
 }
 
 body{
-    font-family: "Hanken Grotesk ";
+    font-size: 18px;   
+    font-family: "Hanken Grotesk";
 }
 
-.card{
-    display:flex;
+.card__result-cercle {
+    width: 150px;
+    /* Establece el ancho del círculo */
+    height: 150px;
+    /* Establece la altura del círculo */
+    border-radius: 50%;
+    /* Hace que el elemento sea un círculo */
+    background: linear-gradient(to top, var(--Persian-blue), var(--Violet-blue));
+    /* Crea un degradado lineal de arriba hacia abajo */
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .card__result{
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    background-color: var(--Light-royal-blue);
+    border-radius: 25px;
     color:var(--Pale-blue);
-    background:linear-gradient(160deg, var(--Light-slate-blue), var(--Light-royal-blue)) ;
-
 }
 .card__result-score{
     display: flex;
@@ -64,156 +72,69 @@ body{
 
 .card_summary-title{
     color: var(--Dark-gray-blue) ;
-    display: flex;
-    flex-direction:column;
-    margin-right:300px;
-    
-
-
 }
 
 .card_summary-reaction{
     background-color:hsla(0, 100%, 67%, 0.3);
     color:var(--Light-red);
-    border-radius: 10px;
-    padding:15px;
-    margin-bottom: 15px;
-    margin-left: 4px;
-    margin-right: 4px;
-
     
     
-}
-.card_summary-reaction-title {
-    padding-left: 10px;
-
-}
-.card_summary-reaction-score {
-    padding-left:250px;
 }
 
 .card_summary-memory{
     background-color: hsla(39, 100%, 56%, 0.3 );
     color: var(--Orangey-yellow);
-    border-radius: 10px;
-    padding:15px;
-    margin-bottom: 15px;
-    margin-left: 4px;
-    margin-right: 4px;
-
-
-
 }
-.card_summary-memory-title {
-    padding-left: 10px;
-
-}
-.card_summary-memory-score {
-    padding-left:250px;
-}
-.black-text {
-    color: #000; /* Color negro para "80" */
-    font-weight: bold; /* Negrita para "80" si es necesario */
-  }
-  
-  .gray-text {
-    color: #777; /* Color gris para "/100" */
-  }
 
 .card_summary-verbal{
     background-color:hsla(166, 100%, 37%, 0.3);
     color:var(--Verbal );
-    border-radius: 10px;
-    padding:15px;
-    margin-bottom: 15px;
-    margin-left: 4px;
-    margin-right: 4px;
-
-
-
-}
-.card_summary-verbal-title {
-    padding-left: 10px;
-
-}
-.card_summary-verbal-score {
-    padding-left:260px;
 }
 
 .card_summary-visual{
     background-color: hsla(234, 85%, 45%, 0.3);
     color:var(--Cobalt-blue);
-    border-radius: 10px;
-    padding:15px;
-    margin-bottom: 15px;
-    margin-left: 4px;
-    margin-right: 4px;
-
-
-
-}
-.card_summary-visual-title {
-    padding-left: 10px;
-
-}
-.card_summary-visual-score {
-    padding-left:260px;
-}
-.button{
-    background-color:var(--Dark-gray-blue);
-    color:var(--Pale-blue);
-    border-radius: 10px;
-    border:none;
-    padding: 20px;
-    border-radius:30px;
-    margin-left: 4px;
-    margin-right: 4px;
 }
 .card__result-cercle{
-    
+    border-radius: 50%;
     --Violet-blue: hsla(256, 72%, 46%, 1);
     --Persian-blue: hsla(241, 72%, 46%, 0);
-    width: 120px;
-    height: 120px;
-    border-radius: 60px;
-    background:linear-gradient(160deg, var(--Violet-blue), var(--Persian-blue)) ;
 
 
 }
-
 /*Fuente personalizada*/
 @font-face {
     font-family: "Hanken Grotesk";
     font-style: normal;
     font-weight: 100;
-    src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format(truetype);
+    src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("font/ttf");
 }
 
 @font-face {
     font-family: "Bold";
     font-style: bold;
     font-weight: 700;
-    src: url("../assets/fonts/static/HankenGrotesk-Bold.ttf") format(truetype);
+    src: url("../assets/fonts/static/HankenGrotesk-Bold.ttf") format("font/ttf");
 }
 
 @font-face {
     font-family: "Extra Bold";
     font-style: bold;
     font-weight: 800;
-    src: url("../assets/fonts/static/HankenGrotesk-ExtraBold.ttf") format(truetype);
+    src: url("../assets/fonts/static/HankenGrotesk-ExtraBold.ttf") format("font/ttf");
 }
 
 @font-face {
     font-family: "Medium";
     font-style: normal;
     font-weight: 500;
-    src: url("../assets/fonts/static/HankenGrotesk-Medium.ttf") format(truetype);
+    src: url("../assets/fonts/static/HankenGrotesk-Medium.ttf") format("font/ttf");
 }
-.card_summary{
-    display: flex;
-    flex-direction:column;
-    flex-wrap:wrap;
-    
-    
+
+.button{
+    background-color:var(--Dark-gray-blue);
+    color:var(--Pale-blue);
+    border-radius: 10px;
+    border:none;
 }
 
